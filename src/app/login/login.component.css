@@ -1,0 +1,11 @@
+.bg-login{
+    background-image: url('https://i.imgur.com/2Wg03II.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 625px;
+}
+
+.box{
+    background-color: #ffffff;
+    border-radius: 20px;
+}

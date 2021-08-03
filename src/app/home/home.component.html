@@ -1,0 +1,24 @@
+<div class="container-fluid mb-4">
+  <div class="row banner ">
+    <div class="col d-flex align-items-center justify-content-center">
+      <h1>Olá, {{name}}! Seja bem-vindo(a).</h1>
+    </div>
+    <div class="col">
+      <img src="https://i.imgur.com/kEx5vkl.png?1" class="img mt-3" width="500px" alt="...">
+    </div>
+  </div>
+</div>
+
+<!-- cards com os users -->
+<div class="row row-cols-2 row-cols-md-6 g-4 d-flex justify-content-center m-0">
+  <div class="card ms-3 mb-2" *ngFor='let user of listUsers'>
+    <img src="http://placehold.jp/150x150.png" class="card-img-top mt-3" alt="...">
+    <div class="card-body">
+      <p class="card-text">ID: {{user.id}}</p>
+      <p class="card-text">Name: {{user.name}}</p>
+      <p class="card-text">E-mail: {{user.email}}</p>
+      <p class="card-text">City: {{user.address.city}}</p>
+      <p class="card-text">Company name: {{user.company.name}}</p>
+    </div>
+  </div>
+</div>
